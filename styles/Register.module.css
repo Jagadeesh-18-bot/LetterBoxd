@@ -1,0 +1,99 @@
+.fullPage {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(120deg, #1e3c72, #2a5298, #6dd5fa, #2980b9);
+background-size: 300% 300%;
+animation: gradientShift 12s ease infinite;
+
+  }
+  
+  @keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  .registerContainer {
+    /* background-color: rgba(255, 255, 255, 0.1);
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    backdrop-filter: blur(10px); */
+    width: 100%;
+    max-width: 400px;
+    color: white;
+  }
+  
+  .registerContainer h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .form input {
+    padding: 12px 16px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+  }
+  
+  .passwordField {
+    position: relative;
+  }
+  
+  .eyeIcon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .form button {
+    padding: 12px;
+    border: none;
+    background-color: #00f0ff;
+    color: black;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .form button:hover {
+    color: #ffffff;
+  }
+  
+  
+  .loginPrompt {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+
+  }
+  
+  .loginPrompt a {
+    color: #ff1100;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .logoContainer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  
+  .logoContainer img {
+    border-radius: 50%;
+  }
+  
