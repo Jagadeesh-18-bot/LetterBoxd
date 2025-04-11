@@ -8,11 +8,35 @@ const Register = () => {
   const [showConfirm, setShowConfirm] = useState(false);
   const router = useRouter();
 
-  const handleRegister = (e) => {
+  const handleRegister = async (e) => {
     e.preventDefault();
-    // normally we , save the user data here...
-    router.push('/dashboard'); // redirects to dashbord after register
+    const form = e.target;
+    const name = form[0].value;
+    const email = form[1].value;
+    const username = form[2].value;
+    const password = form[3].value;
+    const confirmPassword = form[4].value;
+  
+    if (password !== confirmPassword) {
+      alert('Passwords do not match!');
+      return;
+    }
+  
+    const res = await fetch('http://localhost:5000/api/register', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ name, email, username, password })
+    });
+  
+    const data = await res.json();
+    if (res.ok) {
+      alert('Registration successful!');
+      router.push('/Login');
+    } else {
+      alert(data.error);
+    }
   };
+  
 
   return (
     <div className={styles.fullPage}>
