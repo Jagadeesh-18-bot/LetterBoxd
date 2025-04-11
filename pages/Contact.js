@@ -6,7 +6,7 @@ const Contact = () => {
   const router = useRouter();
 
   const goToDashboard = () => {
-    router.push('/dashboard'); // Navigates to /dashboard
+    router.push('/dashboard'); // this Navigates to dashboard
   };
 
   return (
