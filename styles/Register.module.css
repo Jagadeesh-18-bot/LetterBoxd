@@ -96,4 +96,21 @@ animation: gradientShift 12s ease infinite;
   .logoContainer img {
     border-radius: 50%;
   }
+  .successMessage {
+    color: #00c851;
+    background-color: #e8f5e9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    text-align: center;
+  }
+  
+  .errorMessage {
+    color: #ff4444;
+    background-color: #fbe9e7;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    text-align: center;
+  }
   
