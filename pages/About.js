@@ -1,8 +1,8 @@
 import React from 'react';
 import styles from '../styles/About.module.css';
-import { useRouter } from 'next/router';
-import { ArrowLeft } from 'lucide-react';
-
+import { useRouter } from 'next/router'; // for navigating between the pages 
+import { ArrowLeft } from 'lucide-react'; 
+// declaring the components
 const About = () => {
   const router = useRouter();
 
@@ -22,7 +22,7 @@ const About = () => {
       <div className={styles.container}>
         <h1 className={styles.title}>🎬 About Us</h1>
         <p className={styles.description}>
-          Welcome to <strong>Letterboxd Clone</strong> — your personal space to discover, rate, and talk about the movies you love.
+          Welcome to <strong>Letterboxd Clone</strong> — this is your personal space to discover, rate, and talk about the movies you love.
         </p>
         <p className={styles.description}>
           We aim to recreate the social movie-sharing experience with a simple and elegant design. From trending films to your personal diary of watched content, we’ve got it all.
