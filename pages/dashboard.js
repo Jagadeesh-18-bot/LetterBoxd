@@ -8,43 +8,43 @@ const movies = [
     title: 'Black Panther',
     rating: 7.2,
     image: 'movie1.png',
-    description: 'A superhero fights to protect Wakanda, a hidden kingdom of advanced technology.'
+    description: 'Displays the descriptionn.'
   },
   {
     title: 'Mickey 17',
     rating: 7.8,
     image: 'movie2.png',
-    description: 'A clone discovers secrets of his world as he navigates his existence.'
+    description: 'Displays the descriptionn.'
   },
   {
     title: 'Magazine Dreams',
     rating: 7.0,
     image: 'movie3.png',
-    description: 'A bodybuilder struggles to balance his dream and mental health.'
+    description: 'Displays the descriptionn.'
   },
   {
     title: 'The Wedding Banquet',
     rating: 8.0,
     image: 'movie4.png',
-    description: 'A gay man fakes a marriage to appease his traditional parents.'
+    description: 'Displays the descriptionn.'
   },
   {
     title: 'The Electric State',
     rating: 6.9,
     image: 'movie5.png',
-    description: 'A girl and a robot travel through a retro-futuristic America.'
+    description: 'Displays the descriptionn.'
   },
   {
     title: 'Freaky Friday',
     rating: 7.3,
     image: 'movie6.png',
-    description: 'Mother and daughter magically switch bodies and learn life lessons.'
+    description: 'Displays the descriptionn.'
   },
   {
     title: 'Sting',
     rating: 6.5,
     image: 'movie7.png',
-    description: 'A sci-fi thriller where curiosity unleashes unexpected consequences.'
+    description: 'Displays the descriptionn.'
   },
 ];
 

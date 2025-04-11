@@ -9,7 +9,7 @@
   margin-top: 3%;
 }
 
-/* Header/Nav */
+/* header/nav */
 .header {
   display: flex;
   justify-content: space-between;
@@ -55,18 +55,18 @@
   color: #ffc107;
 }
 
-/* Movie Grid */
+/* movie Grid */
 .moviesGrid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* wider cards */
   gap: 1.5rem;
   justify-items: center;
   padding: 0 1rem;
-  max-height: calc(100vh - 250px); /* to make it scrollable within view */
+  max-height: calc(100vh - 250px); /* this makes it scrollable within view */
   overflow-y: auto;
 }
 
-/* Movie Card */
+/* movie card */
 .movieCard {
   background-color: #1f1f1f;
   border-radius: 12px;
@@ -81,15 +81,15 @@
   box-shadow: 0 8px 25px rgba(255, 255, 255, 0.6);
 }
 
-/* Movie Poster */
+/* movie poster */
 .movieImage {
   width: 100%;
-  height: 300px; /* taller image */
+  height: 300px; /* for taller image */
   object-fit: cover;
   border-bottom: 1px solid #444;
 }
 
-/* Movie Info */
+/* movie info */
 .movieInfo {
   padding: 0.8rem;
   text-align: center;
@@ -108,7 +108,7 @@
   margin-bottom: 0.6rem;
 }
 
-/* Buttons */
+/* buttons */
 .actionButtons {
   display: flex;
   flex-direction: column;
@@ -130,7 +130,7 @@
   background-color: #ffffff;
 }
 
-/* Footer */
+/* footer */
 .footer {
   margin-top: 3rem;
   text-align: center;
@@ -139,7 +139,7 @@
   border-top: 1px solid #333;
   padding-top: 1rem;
 }
-/* Description Box */
+/* description Box */
 .descriptionBox {
   padding: 1rem;
   text-align: center;
@@ -172,7 +172,7 @@
   background-color: #ffffff;
 }
 
-/* Fade In Effect */
+/* adds the fade in effect */
 @keyframes fadeIn {
   from { opacity: 0; transform: scale(0.95); }
   to { opacity: 1; transform: scale(1); }
