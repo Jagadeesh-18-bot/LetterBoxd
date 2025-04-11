@@ -5,11 +5,27 @@ import styles from '../styles/Login.module.css';
 const Login = () => {
   const router = useRouter();
 
-  const handleLogin = (e) => {
+  const handleLogin = async (e) => {
     e.preventDefault();
-    // normally, validates the login here...
-    router.push('/dashboard'); // redirects to the dashboard
+    const form = e.target;
+    const email = form[0].value;
+    const password = form[1].value;
+  
+    const res = await fetch('http://localhost:5000/api/login', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ email, password })
+    });
+  
+    const data = await res.json();
+    if (res.ok) {
+      alert(`Welcome back, ${data.username}!`);
+      router.push('/dashboard');
+    } else {
+      alert(data.error);
+    }
   };
+  
 
   return (
     <div className={styles.fullPage}>
