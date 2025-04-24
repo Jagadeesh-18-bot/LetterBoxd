@@ -1,10 +1,10 @@
 import React from 'react';
 import styles from '../styles/About.module.css';
 import { useRouter } from 'next/router'; // for navigating between the pages 
-import { ArrowLeft } from 'lucide-react'; 
-// declaring the components
+import { ArrowLeft } from 'lucide-react'; // Icon for back button
+// About Component
 const About = () => {
-  const router = useRouter();
+  const router = useRouter(); // Innitialise the router
 
   const handleBack = () => {
     router.push('/dashboard');
@@ -18,7 +18,7 @@ const About = () => {
           Back to Dashboard
         </button>
       </div>
-
+      {/* About Page content */}
       <div className={styles.container}>
         <h1 className={styles.title}>🎬 About Us</h1>
         <p className={styles.description}>
@@ -61,5 +61,7 @@ const About = () => {
     </div>
   );
 };
-
+// default export of the About component
+// This allows it to be imported without curly braces:
+// Example: import About from './About';
 export default About;
