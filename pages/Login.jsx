@@ -1,28 +1,30 @@
 import React from 'react';
 import { useRouter } from 'next/router';
 import styles from '../styles/Login.module.css';
-
+// login component definitation
 const Login = () => {
   const router = useRouter();
-
+// funnction to handle login form submission
   const handleLogin = async (e) => {
-    e.preventDefault();
+    e.preventDefault(); // prevent default form submissionn behaviour
     const form = e.target;
     const email = form[0].value;
     const password = form[1].value;
-
+// sends login req to backend
     const res = await fetch('http://localhost:5000/api/login', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ email, password }),
+      headers: { 'Content-Type': 'application/json' }, // sends json data
+      body: JSON.stringify({ email, password }), // converts data to json
     });
 
-    const data = await res.json();
+    const data = await res.json(); // parse response json
     if (res.ok) {
+      // on successful login, store username and then redirect to dashboard
       localStorage.setItem('username', data.username);
       alert(`Welcome back, ${data.username}!`);
       router.push('/dashboard');
     } else {
+      // if failure , then show error message from backend
       alert(data.error);
     }
   };
@@ -44,5 +46,5 @@ const Login = () => {
     </div>
   );
 };
-
+// exports the login component as default
 export default Login;
