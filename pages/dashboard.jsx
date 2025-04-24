@@ -16,7 +16,7 @@ export async function getServerSideProps() {
     { title: 'Sting', rating: 6.5, image: 'movie7.png', description: "Sting, born Gordon Sumner, is a British musician renowned as the frontman of The Police and for his successful solo career, blending rock, jazz, and world music.", link: "https://www.youtube.com/watch?v=B73g786Izg0" },
   ];
 
-  const maxPages = 2;
+  const maxPages = 20;
   let allOmdbMovies = [];
   for (let page = 1; page <= maxPages; page++) {
     const omdbResponse = await fetch(
