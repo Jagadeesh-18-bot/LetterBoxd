@@ -25,19 +25,18 @@ const About = () => {
           Welcome to <strong>Letterboxd Clone</strong> — this is your personal space to discover, rate, and talk about the movies you love.
         </p>
         <p className={styles.description}>
-          We aim to recreate the social movie-sharing experience with a simple and elegant design. From trending films to your personal diary of watched content, we’ve got it all.
+          I aim to recreate the social movie-sharing experience with a simple and elegant design. From trending films to your personal diary of watched content, I’ve got it all.
         </p>
         <p className={styles.description}>
-          Built with ❤️ using React and Next.js by passionate movie lovers.
+          Built with 💛 using React and Next.js by Me.
         </p>
-
         <div className={styles.teamSection}>
           <h2 className={styles.subtitle}>👨‍💻 Our Team</h2>
           <div className={styles.teamList}>
             <div className={styles.card}>
               <img
                 src="https://avatars.githubusercontent.com/u/9919?v=4"
-                alt="Jagadeeshwar"
+                alt="Jagadeesh"
                 className={styles.avatar}
               />
               <div className={styles.cardText}>
