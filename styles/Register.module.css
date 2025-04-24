@@ -1,116 +1,127 @@
 .fullPage {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(120deg, #1e3c72, #2a5298, #6dd5fa, #2980b9);
-background-size: 300% 300%;
-animation: gradientShift 12s ease infinite;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #0f172a; /* Same as login page */
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
 
-  }
-  
-  @keyframes gradientShift {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-  }
-  
-  .registerContainer {
-    /* background-color: rgba(255, 255, 255, 0.1);
-    padding: 30px 40px;
-    border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-    backdrop-filter: blur(10px); */
-    width: 100%;
-    max-width: 400px;
-    color: white;
-  }
-  
-  .registerContainer h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    font-weight: 700;
-  }
-  
-  .form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-  
-  .form input {
-    padding: 12px 16px;
-    border: none;
-    border-radius: 8px;
-    outline: none;
-    font-size: 14px;
-  }
-  
-  .passwordField {
-    position: relative;
-  }
-  
-  .eyeIcon {
-    position: absolute;
-    right: 15px;
-    top: 50%;
-    transform: translateY(-50%);
-    cursor: pointer;
-    font-size: 18px;
-  }
-  
-  .form button {
-    padding: 12px;
-    border: none;
-    background-color: #00f0ff;
-    color: black;
-    font-weight: bold;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: 0.3s ease;
-  }
-  
-  .form button:hover {
-    color: #ffffff;
-  }
-  
-  
-  .loginPrompt {
-    text-align: center;
-    margin-top: 15px;
-    font-size: 14px;
+.registerContainer {
+  width: 100%;
+  max-width: 400px;
+  color: white;
+  text-align: center;
+}
 
-  }
-  
-  .loginPrompt a {
-    color: #ff1100;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  .logoContainer {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 1rem;
-  }
-  
-  .logoContainer img {
-    border-radius: 50%;
-  }
-  .successMessage {
-    color: #00c851;
-    background-color: #e8f5e9;
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 6px;
-    text-align: center;
-  }
-  
-  .errorMessage {
-    color: #ff4444;
-    background-color: #fbe9e7;
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 6px;
-    text-align: center;
-  }
-  
+.logoContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.logoContainer img {
+  border-radius: 50%;
+  border: 3px solid white;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.form input {
+  padding: 12px 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #1e293b;
+  color: white;
+  font-size: 1rem;
+  outline: none;
+}
+
+.form input::placeholder {
+  color: #94a3b8;
+}
+
+.form input:focus {
+  background-color: #334155;
+}
+
+.passwordField {
+  position: relative;
+}
+
+.eyeIcon {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.form button {
+  padding: 12px;
+  border: none;
+  background-color: #3b82f6;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.form button:hover {
+  background-color: #2563eb;
+}
+
+.loginPrompt {
+  color: #00f0ff;
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 5px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* .loginPrompt a {
+  color: #60a5fa;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 5px;
+} */
+
+.loginPrompt a:hover {
+  color: #ff4d4d;
+  transform: translateY(-2px);}
+
+.successMessage {
+  color: #00c851;
+  background-color: #e8f5e9;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.errorMessage {
+  color: #ff4444;
+  background-color: #fbe9e7;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  text-align: center;
+}
