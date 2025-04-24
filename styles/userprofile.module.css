@@ -1,126 +1,214 @@
-/* userprofile.module.css */
-
 .profileContainer {
-    background-color: #121212;
-    color: #fff;
-    min-height: 100vh;
-    padding: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .card {
-    background-color: #1e1e1e;
-    border-radius: 12px;
-    display: flex;
-    flex-direction: column;
-    padding: 2rem;
-    max-width: 500px;
-    width: 100%;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
-  }
-  
-  .avatarSection {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 1.5rem;
-  }
-  
-  .avatar {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    border: 4px solid #00bfff;
-    object-fit: cover;
-  }
-  
-  .infoSection {
-    text-align: center;
-  }
-  
-  .infoSection h2 {
-    margin: 0;
-    font-size: 1.8rem;
-    color: #ffcc00;
-  }
-  
-  .role {
-    margin: 0.3rem 0;
-    font-size: 1rem;
-    color: #ccc;
-  }
-  
-  .location {
-    font-size: 0.9rem;
-    color: #aaa;
-  }
-  
-  .bio {
-    margin: 1rem 0;
-    font-style: italic;
-    color: #e0e0e0;
-  }
-  
-  .stats {
-    display: flex;
-    justify-content: space-around;
-    margin: 1.5rem 0;
-  }
-  
-  .stats div {
-    text-align: center;
-  }
-  
-  .stats strong {
-    display: block;
-    font-size: 1.3rem;
-    color: #00ff88;
-  }
-  
-  .stats span {
-    color: #bbb;
-    font-size: 0.9rem;
-  }
-  
-  .actions {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-bottom: 1rem;
-  }
-  
-  .editBtn,
-  .logoutBtn {
-    padding: 0.5rem 1rem;
-    border-radius: 8px;
-    border: none;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.3s;
-  }
-  
-  .editBtn {
-    background-color: #ffc107;
-    color: #000;
-  }
-  
-  .editBtn:hover {
-    background-color: #ff9800;
-  }
-  
-  .logoutBtn {
-    background-color: #ff4040;
-    color: #fff;
-  }
-  
-  .logoutBtn:hover {
-    background-color: #d32f2f;
-  }
-  
-  .joined {
-    margin-top: 1rem;
-    font-size: 0.85rem;
-    color: #999;
-  }
-  
+  background: #0f172a;
+  color: #d1d5db; 
+  min-height: 100vh;
+  padding: 3rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto; 
+}
+
+.card {
+  margin-top: 10%;
+  width: 100%;
+  max-width: 800px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background: linear-gradient(180deg, rgba(30, 41, 59, 0.8), rgba(17, 24, 39, 0.9)); Gradient overlay */
+  padding: 2rem;
+  border-radius: 12px; 
+  backdrop-filter: blur(8px); 
+  transition: background 0.3s ease;
+}
+
+.avatarSection {
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.avatar {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid transparent;
+  box-shadow: 0 0 20px rgba(56, 189, 248, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.avatar:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 30px rgba(56, 189, 248, 0.7); 
+}
+
+.infoSection {
+  text-align: center;
+  padding: 1.5rem;
+  background: rgba(17, 24, 39, 0.6); 
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+.infoSection h2 {
+  margin: 0;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #7dd3fc; 
+  text-shadow: 0 0 8px rgba(125, 211, 252, 0.5); 
+}
+.role {
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+  color: #34d399; 
+  font-weight: 500;
+}
+
+.location {
+  font-size: 1rem;
+  color: #94a3b8; 
+}
+
+.bio {
+  margin: 1.5rem 0;
+  font-size: 1.1rem;
+  color: #e5e7eb; 
+  line-height: 1.6;
+  max-width: 600px;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: linear-gradient(90deg, rgba(56, 189, 248, 0.2), rgba(34, 211, 153, 0.2)); /* Gradient bar */
+  border-radius: 8px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.stats div {
+  text-align: center;
+}
+
+.stats strong {
+  display: block;
+  font-size: 1.6rem;
+  color: #38bdf8; 
+  text-shadow: 0 0 6px rgba(56, 189, 248, 0.4);
+}
+
+.stats span {
+  color: #9ca3af; 
+  font-size: 0.95rem;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.editBtn,
+.logoutBtn,
+.saveBtn,
+.cancelBtn {
+  padding: 0.7rem 1.5rem;
+  border-radius: 50px; 
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.editBtn:hover,
+.logoutBtn:hover,
+.saveBtn:hover,
+.cancelBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3); 
+}
+
+.editBtn {
+  background: linear-gradient(45deg, #f59e0b, #fbbf24); 
+  color: #1f2937; /* Dark text */
+}
+
+.editBtn:hover {
+  background: linear-gradient(45deg, #d97706, #f59e0b);
+}
+
+.logoutBtn {
+  background: linear-gradient(45deg, #ef4444, #f87171); 
+  color: #ffffff;
+}
+
+.logoutBtn:hover {
+  background: linear-gradient(45deg, #dc2626, #ef4444);
+}
+
+.saveBtn {
+  background: linear-gradient(45deg, #10b981, #34d399);
+  color: #ffffff;
+}
+
+.saveBtn:hover {
+  background: linear-gradient(45deg, #059669, #10b981);
+}
+
+.cancelBtn { 
+  color: #ffffff;
+}
+
+.cancelBtn:hover {
+  background: linear-gradient(45deg, #4b5563, #6b7280);
+}
+
+.joined {
+  margin-top: 2rem;
+  font-size: 0.95rem;
+  color: #9ca3af; 
+  text-align: center;
+}
+
+.inputField {
+  width: 100%;
+  padding: 0.8rem;
+  margin: 0.7rem 0;
+  border-radius: 8px;
+  border: 1px solid rgba(56, 189, 248, 0.3); 
+  background: rgba(17, 24, 39, 0.8); 
+  color: #e5e7eb; 
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.inputField:focus {
+  border-color: #38bdf8; 
+  box-shadow: 0 0 10px rgba(56, 189, 248, 0.5); 
+  outline: none;
+}
+
+.textArea {
+  width: 100%;
+  padding: 0.8rem;
+  margin: 0.7rem 0;
+  border-radius: 8px;
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  background: rgba(17, 24, 39, 0.8);
+  color: #e5e7eb;
+  font-size: 1rem;
+  resize: vertical;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.textArea:focus {
+  border-color: #38bdf8;
+  box-shadow: 0 0 10px rgba(56, 189, 248, 0.5);
+  outline: none;
+}
