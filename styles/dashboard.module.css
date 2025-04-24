@@ -281,6 +281,7 @@
   align-items: center;
   gap: 10px;
 }
+/* Existing styles remain unchanged */
 .categories {
   margin-top: 2rem;
 }
@@ -291,31 +292,28 @@
 
 .categoryTitle {
   font-size: 1.8rem;
-  color: #5bf4ff;
+  color: #00c6ff;
   text-align: center;
-  margin-bottom: 3%;
-  margin-top: 3%;
+  margin-bottom: 1rem;
 }
 .followersButtonWrapper {
   display: flex;
   justify-content: flex-start;
-  padding: 1rem 2rem;
+  /* padding: 1rem 2rem; */
 }
 
 .followersButton {
   display: flex;
   align-items: center;
   padding: 0.75rem 1.5rem;
-  background: #01e3f3;
-  color: #ff0000;
+  background: #00c6ff;
+  color: #fff;
   border: none;
   border-radius: 8px;
   cursor: pointer;
   font-size: 1rem;
   font-weight: 500;
   transition: background 0.3s ease, transform 0.2s ease;
-  /* margin-left: 80%; */
-  /* margin-bottom: 10%; */
 }
 
 .followersButton:hover {
