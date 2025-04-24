@@ -37,14 +37,13 @@ const Register = () => {
     }
   };
   
-
   return (
     <div className={styles.fullPage}>
       <div className={styles.registerContainer}>
         <div className={styles.logoContainer}>
           <Image src="/Register.png" alt="Register Logo" width={100} height={100} />
         </div>
-        <h2>Create an Account</h2>
+        <h2 className={styles.title}>Create an Account</h2>
         <form className={styles.form} onSubmit={handleRegister}>
           <input type="text" placeholder="Full Name" required />
           <input type="email" placeholder="Email" required />
