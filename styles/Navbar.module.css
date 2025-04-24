@@ -1,70 +1,68 @@
 .navbar {
-    width: 100%;
-    background: rgba(34, 34, 34, 0.6); /* semi-transparent */
-    backdrop-filter: blur(10px); /* glass effect */
-    -webkit-backdrop-filter: blur(10px);
-    padding: 1rem 0.5rem;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 100;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-  }
-  
+  width: 100%;
+  background: rgba(34, 34, 34, 0.6); 
+  backdrop-filter: blur(10px); 
+  -webkit-backdrop-filter: blur(10px);
+  padding: 1rem 0.5rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.navList {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.link {
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  position: relative;
+  padding: 5px 8px;
+  transition: all 0.3s ease;
+}
+
+.link:hover {
+  color: #00acee;
+}
+
+.link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: -4px;
+  background-color: #00acee;
+  transition: width 0.3s ease-in-out;
+}
+
+.link:hover::after {
+  width: 100%;
+}
+
+@media (max-width: 600px) {
   .navList {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2.5rem;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .link {
-    color: #fff;
-    font-size: 1.1rem;
-    font-weight: 600;
-    text-decoration: none;
-    position: relative;
-    padding: 5px 8px;
-    transition: all 0.3s ease;
-  }
-  
-  .link:hover {
-    color: #00acee;
-  }
-  
-  .link::after {
-    content: "";
+    flex-direction: column;
+    gap: 1.2rem;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.85);
     position: absolute;
-    width: 0;
-    height: 2px;
+    top: 60px;
     left: 0;
-    bottom: -4px;
-    background-color: #00acee;
-    transition: width 0.3s ease-in-out;
-  }
-  
-  .link:hover::after {
     width: 100%;
   }
-  
-  /* Optional: Responsive navbar for smaller screens */
-  @media (max-width: 600px) {
-    .navList {
-      flex-direction: column;
-      gap: 1.2rem;
-      padding: 1rem;
-      background-color: rgba(0, 0, 0, 0.85);
-      position: absolute;
-      top: 60px;
-      left: 0;
-      width: 100%;
-    }
-  
-    .navbar {
-      padding: 1rem;
-    }
+
+  .navbar {
+    padding: 1rem;
   }
-  
+}
