@@ -1,14 +1,14 @@
 import React from 'react';
 import { useRouter } from 'next/router';
 import styles from '../styles/Contact.module.css';
-
+// Contact Component
 const Contact = () => {
-  const router = useRouter();
+  const router = useRouter(); 
 
   const goToDashboard = () => {
     router.push('/dashboard');
   };
-
+// Contact Page Content
   return (
     <div className={styles.fullPage}>
       <img src="ME.jpeg" alt="Logo" className={styles.logo} />
@@ -24,5 +24,7 @@ const Contact = () => {
     </div>
   );
 };
-
+// default export of the Contact component
+// This allows it to be imported without curly braces:
+// Example: import Contact from './Contact';
 export default Contact;
