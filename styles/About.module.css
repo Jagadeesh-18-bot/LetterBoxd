@@ -1,97 +1,108 @@
 .aboutPage {
-    background-color: #121212;
-    color: #ffffff;
-    padding: 5rem 2rem;
-    min-height: 100vh;
-    font-family: 'Segoe UI', sans-serif;
-  }
-  
-  .container {
-    max-width: 1000px;
-    margin: 0 auto;
-    text-align: center;
-  }
-  
-  .title {
-    font-size: 3rem;
-    font-weight: 700;
-    color: #e50914;
-    margin-bottom: 2rem;
-  }
-  
-  .description {
-    font-size: 1.1rem;
-    line-height: 1.7;
-    color: #cccccc;
-    margin-bottom: 1.5rem;
-  }
-  
-  .subtitle {
-    font-size: 2rem;
-    color: #ffcc00;
-    margin: 3rem 0 2rem;
-  }
-  
-  .teamList {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-  }
-  
-  .card {
-    background: #1e1e1e;
-    border-radius: 12px;
-    padding: 1.5rem;
-    width: 250px;
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
-    text-align: center;
-    transition: transform 0.3s ease;
-  }
-  
-  .card:hover {
-    transform: translateY(-10px);
-  }
-  
-  .avatar {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin-bottom: 1rem;
-    object-fit: cover;
-    border: 2px solid #e50914;
-  }
-  
-  .cardText h3 {
-    font-size: 1.2rem;
-    color: #ffffff;
-    margin: 0.5rem 0;
-  }
-  
-  .cardText p {
-    color: #aaaaaa;
-    font-size: 0.95rem;
-  }
-  .backButtonWrapper {
-    text-align: left;
-    margin-bottom: 2rem;
-    padding-left: 1rem;
-  }
-  
-  .backButton {
-    background-color: #e50914;
-    color: #fff;
-    border: none;
-    padding: 0.6rem 1.2rem;
-    font-size: 0.95rem;
-    border-radius: 8px;
-    display: inline-flex;
-    align-items: center;
-    cursor: pointer;
-    transition: background 0.3s ease;
-  }
-  
-  .backButton:hover {
-    background-color: #b20710;
-  }
-  
+  min-height: 100vh;
+  background-color: #0f172a; 
+  color: #ffffff;
+  padding: 4rem 2rem;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  max-width: 1000px;
+  width: 100%;
+  text-align: center;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ff0000; 
+  margin-bottom: 1.5rem;
+}
+
+.description {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #cbd5e1;
+  margin-bottom: 2rem;
+}
+
+.subtitle {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #00f0ff;
+  margin: 3rem 0 1.5rem;
+}
+
+.teamList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.card {
+  background-color: #1e293b;
+  border-radius: 10px;
+  padding: 1.5rem;
+  width: 240px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+}
+
+.avatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #ff0000;
+  margin-bottom: 1rem;
+}
+
+.cardText h3 {
+  font-size: 1.1rem;
+  color: #ffffff;
+  margin: 0.5rem 0;
+}
+
+.cardText p {
+  font-size: 0.95rem;
+  color: #94a3b8;
+}
+
+.backButtonWrapper {
+  width: 100%;
+  text-align: left;
+  max-width: 1000px;
+  margin-top: 5%;
+  margin-bottom: 2rem;
+  margin-right: 30%;
+  padding-left: 1rem;
+}
+
+.backButton {
+  background-color: #f63b3b;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  font-weight: bold;
+  font-size: 0.95rem;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.backButton:hover {
+  background-color: #2563eb;
+  transform: translateY(-2px);
+}
