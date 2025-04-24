@@ -1,19 +1,19 @@
-import Head from "next/head";
-import Image from "next/image";
-import { Geist, Geist_Mono } from "next/font/google";
+import Head from "next/head"; //  for setting meta tags and page titles
+// import Image from "next/image";
+import { Geist, Geist_Mono } from "next/font/google"; // google fonts via next.js
 import styles from "@/styles/Home.module.css";
 import Navbar from "@/component/Navbar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
-  subsets: ["latin"],
+  subsets: ["latin"], // oly include latin char set
 });
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
-
+// default export of home component
 export default function Home() {
   return (
     <div className={`${geistSans.variable} ${geistMono.variable}`}>
@@ -26,6 +26,7 @@ export default function Home() {
       </Head>
 
       <Navbar />
+      {/* Main content container */}
 
       <div className={styles.container}>
         <div className={styles.card}>
