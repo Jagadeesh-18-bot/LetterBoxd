@@ -14,7 +14,7 @@
 
 .card {
   background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(20px);
   border-radius: 20px;
   padding: 40px 60px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
@@ -25,25 +25,26 @@
 .title {
   font-size: 3.5rem;
   font-weight: bold;
-  font-family: 'Segoe UI', sans-serif;
-  margin-bottom: 10px;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+  color: #ffffff;
 }
 
 .letterboxd {
-  color: #000;
+  color: #ffffff;
 }
 
 .movies {
-  color: #1e90ff;
+  color: #000000;
 }
 
 .subtitle {
   font-size: 1.2rem;
   margin-top: 10px;
-  color: #ffffff;
+  color: #00e7fc;
 }
 
-.ctaButton {
+/* .ctaButton {
   margin-top: 25px;
   padding: 12px 30px;
   font-size: 1rem;
@@ -53,9 +54,41 @@
   border-radius: 8px;
   transition: all 0.3s ease;
   display: inline-block;
+} */
+
+/* .ctaButton:hover {
+  transform: scale(1.05);
+  background: linear-gradient(to right, #007bff, #00aaff);
+} */
+.ctaButton {
+  margin-top: 25px;
+  padding: 14px 36px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  background: linear-gradient(135deg, #00d4ff, #0077ff);
+  color: #fff;
+  border-radius: 50px;
+  box-shadow: 0 0 15px rgba(0, 119, 255, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  display: inline-block;
+  cursor: pointer;
 }
 
 .ctaButton:hover {
-  transform: scale(1.05);
-  background: linear-gradient(to right, #007bff, #00aaff);
+  transform: scale(1.08);
+  background: linear-gradient(135deg, #0077ff, #00d4ff);
+  box-shadow: 0 0 25px rgba(0, 119, 255, 0.6);
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+  flex-direction: column;
+  background-image: url('/background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px;
 }
