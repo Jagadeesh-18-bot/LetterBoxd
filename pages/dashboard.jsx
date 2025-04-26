@@ -5,7 +5,7 @@ import { Rating } from 'react-simple-star-rating';
 import { UserPlus, Users } from 'lucide-react';
 
 export async function getServerSideProps() {
-  const apiKey = '675f7df0';
+  const apiKey = 'Your Api Key';
   const localMovies = [
     { title: 'Black Panther', rating: 8, image: 'movie1.png', description: "After death of his father, T'Challa returns to the hidden, advanced nation of Wakanda to take his place as king—but faces powerful enemies who challenge his throne and the fate of his people.", link: "https://www.youtube.com/watch?v=5jCHcChxG5I" },
     { title: 'Mickey 17', rating: 7.8, image: 'movie2.png', description: "An expendable worker on a distant planet is cloned every time he dies—but when one version survives, he must face his replacement and uncover the truth behind his existence.", link: "https://www.youtube.com/watch?v=Qjn5UZoWlaQ&pp=ygUPbWlja2V5IDE3IG1vdmll" },
@@ -16,7 +16,7 @@ export async function getServerSideProps() {
     { title: 'Sting', rating: 6.5, image: 'movie7.png', description: "Sting, born Gordon Sumner, is a British musician renowned as the frontman of The Police and for his successful solo career, blending rock, jazz, and world music.", link: "https://www.youtube.com/watch?v=B73g786Izg0" },
   ];
 
-  const maxPages = 20;
+  const maxPages = 2;
   let allOmdbMovies = [];
   for (let page = 1; page <= maxPages; page++) {
     const omdbResponse = await fetch(
