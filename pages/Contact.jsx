@@ -16,7 +16,7 @@ const Contact = () => {
       <div className={styles.infoGroup}>
         <p><strong>📱 Mobile:</strong> +91 7013631730</p>
         <p><strong>📧 Email:</strong> <a href="mailto:kota.jagadesh123@gmail.com">kota.jagadesh123@gmail.com</a></p>
-        <p><strong>💻 GitHub:</strong> <a href="https://github.com/Jagadeesh-18-bot" target="_blank" rel="noopener noreferrer">Jagadeesh-18-bot</a></p>
+        <p><strong>💻 GitHub:</strong> <a href="https://github.com/Kota-Jagadeesh" target="_blank" rel="noopener noreferrer">Jagadeesh-18-bot</a></p>
       </div>
       <button className={styles.button} onClick={goToDashboard}>
         Go to Dashboard
